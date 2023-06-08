@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+
+:root {
+  /* --default-color: ; */
+  --background-color: #111720;
+  --white-color: #fff;
+  --white-color-disable: #6B7485;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  position: fixed;
+}
+
+.nav-div {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+
+#nav-logo {
+  height: 40px;
+  margin-right: 50px;
+}
+
+nav div img {
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--white-color-disable);
+  font-size: 0.8em;
+}
+
+.nav-links a:nth-child(1) {
+  color: var(--white-color);
+}
+
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#icon-search {
+  width: 25px;
+  height: 25px;
+}
+
+
+/* MAIN */
+
+
+.main-background {
+  display: flex;
+  align-items: center;
+  background-image: url(/img/background-avengers.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.main-movie {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 100px;
+}
+
+#movie-logo {
+  width: 30vw;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-info span {
+  color: var(--white-color-disable);
+  font-size: 0.65em;
+}
+
+.age-rating {
+  background: #AE8F00;
+  padding: 3px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  border-radius: 2px;
+  color: #fff !important;
+}
+
+.movie-subtitle p {
+  max-width: 35vw;
+  color: #99A4B9;
+  font-size: 0.8em;
+}
+
+.movie-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.movie-actions a:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.movie-actions a:nth-child(1) img {
+  width: 15px;
+  height: 15px;
+}
+
+.movie-actions a:nth-child(2) {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--white-color);
+  border-radius: 5px;
+  font-size: 0.8em;
+}
