@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 /* font-family: 'Poppins', sans-serif; */
 
+/* FORMATAÇÃo */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -28,11 +30,16 @@ nav {
   display: flex;
   width: 100%;
   height: 70px;
-  background: none;
+  /* background: #000000; */
   justify-content: space-between;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0px 50px;
   position: fixed;
+  z-index: 1000;
+}
+
+body {
+  background: #000;
 }
 
 .nav-div {
@@ -64,6 +71,10 @@ nav div img {
   color: var(--white-color);
 }
 
+.nav-links a:hover {
+  transition: 0.3s;
+  color: var(--white-color);
+}
 
 .nav-actions {
   display: flex;
@@ -72,8 +83,8 @@ nav div img {
 }
 
 #icon-search {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 
@@ -84,7 +95,6 @@ nav div img {
   display: flex;
   align-items: center;
   background-image: url(/img/background-avengers.png);
-  width: 100vw;
   height: 100vh;
   background-size: cover;
 }
@@ -93,7 +103,7 @@ nav div img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 #movie-logo {
@@ -154,4 +164,87 @@ nav div img {
   border: solid 1px var(--white-color);
   border-radius: 5px;
   font-size: 0.8em;
+}
+
+.movie-actions a:nth-child(2):hover {
+  transition: 0.3s;
+  background: #5629EE;
+  color: var(--white-color);
+  border: solid 1px #5629EE;
+}
+
+.movie-actions a:active {
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+
+
+
+/* LISTA DE FILMES E CATEGORIAS */
+
+.main-movies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  margin-left: 50px;
+  top: -100px;
+}
+
+.main-movies-list h2 {
+  font-weight: normal;
+  font-size: 1em;
+  margin: 20px 0px;
+}
+
+.main-movies-list h2:first-child {
+  margin: 0px 0px 20px 0px;
+}
+
+.movies {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.movies img {
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.movies img:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.progress {
+  background: #1E2331;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.progress-value-25 {
+  width: 25%;
+  height: 5px;
+  background: #5629EE;
+  border-radius: 5px;
+}
+
+.progress-value-50 {
+  width: 50%;
+  height: 5px;
+  background: #5629EE;
+  border-radius: 5px;
+}
+
+.progress-value-75 {
+  width: 75%;
+  height: 5px;
+  background: #5629EE;
+  border-radius: 5px;
 }
