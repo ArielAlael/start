@@ -1,7 +1,7 @@
 {
   "name": "start",
   "version": "1.0.0",
-  "description": "",
+  "description": "streaming de video",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,12 +11,12 @@
     "url": "git+https://github.com/ArielAlael/start.git"
   },
   "keywords": [],
-  "author": "",
+  "authors": ["Ariel", "Jack"],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArielAlael/start/issues"
   },
-  "homepage": "https://github.com/ArielAlael/start#readme",
+  "homepage": "https://prototipo-start.surge.sh/",
   "devDependencies": {
     "git-scripts": "^0.6.4",
     "surge": "^0.23.1"
